@@ -3,5 +3,5 @@
     <string name="author">Author</string>
     <string name="year">Year</string>
     <string name="get_books">Get Books</string>
-    <string name="found_1_d">Found\n %1$d\nbooks</string>
+    <string name="found_1_d">Found Total %1$d\n show %2$d</string>
 </resources>

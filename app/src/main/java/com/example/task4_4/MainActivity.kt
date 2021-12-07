@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         var author = ""
         val itemNoFound = findViewById<TextView>(R.id.itemNoFound)
         val itemFoundCount = findViewById<TextView>(R.id.itemFoundCount)
-        itemFoundCount.text = getString(R.string.found_1_d, 0)
+        itemFoundCount.text = getString(R.string.found_1_d, 0,0)
 
 
         /* hide soft keyboard after writing and sending message or any */
@@ -63,12 +63,12 @@ class MainActivity : AppCompatActivity() {
                         adapter = RecyclerAdapter(filteredBooks.take(3))
                         recyclerView.adapter = adapter
                         itemNoFound.text = ""
-                        itemFoundCount.text = getString(R.string.found_1_d, filteredBooks.size)
+                        itemFoundCount.text = getString(R.string.found_1_d, filteredBooks.size,filteredBooks.take(3).size)
                     } else {
                         adapter = RecyclerAdapter(filteredBooks)
                         recyclerView.adapter = adapter
                         itemNoFound.text = "Nothing found. Try other options"
-                        itemFoundCount.text = getString(R.string.found_1_d, 0)
+                        itemFoundCount.text = getString(R.string.found_1_d, 0,0)
                     }
                 }
             }
