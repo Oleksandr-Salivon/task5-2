@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
 
                     if (filteredBooks.isNotEmpty()) {
-                        adapter = RecyclerAdapter(filteredBooks)
+                        adapter = RecyclerAdapter(filteredBooks.take(3))
                         recyclerView.adapter = adapter
                         itemNoFound.text = ""
                         itemFoundCount.text = getString(R.string.found_1_d, filteredBooks.size)
@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity() {
                         itemNoFound.text = "Nothing found. Try other options"
                         itemFoundCount.text = getString(R.string.found_1_d, 0)
                     }
-
                 }
             }
 
