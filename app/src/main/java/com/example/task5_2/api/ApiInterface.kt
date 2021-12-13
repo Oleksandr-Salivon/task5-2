@@ -1,6 +1,6 @@
-package com.example.task4_4.api
+package com.example.task5_2.api
 
-import com.example.task4_4.model.Books
+import com.example.task5_2.model.Books
 import retrofit2.http.GET
 
 interface ApiInterface {

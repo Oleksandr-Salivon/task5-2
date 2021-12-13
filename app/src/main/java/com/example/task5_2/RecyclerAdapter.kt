@@ -1,16 +1,14 @@
-package com.example.task4_4
+package com.example.task5_2
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.task4_4.model.Books
-import com.squareup.picasso.Picasso
+import com.example.task5_2.data.Book
+import com.example.task5_2.model.Books
 
-class RecyclerAdapter (books:List<Books>): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter (books:List<Book>): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     private var myList = books
     private var titles = arrayOf("s","d")
     private var authors = arrayOf("ssss","dsss")
@@ -23,14 +21,14 @@ class RecyclerAdapter (books:List<Books>): RecyclerView.Adapter<RecyclerAdapter.
 
     override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) {
         holder.itemTitle.text = "Title: ${myList[position].title.toString()}"
-        holder.itemAuthor.text = "Author: ${myList[position].author.toString()}"
+        holder.itemAuthor.text = "Author: ${myList[position].authorName.toString()}"
         holder.itemYear.text = "Year\n\n${myList[position].year.toString()}"
     }
 
     override fun getItemCount(): Int {
         return myList.size
     }
-fun setData(newList: List<Books>){
+fun setData(newList: List<Book>){
     myList = newList
     notifyDataSetChanged()
 }

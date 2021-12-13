@@ -1,7 +1,7 @@
-package com.example.task4_4
+package com.example.task5_2
 
 import android.app.Application
-import com.example.task4_4.api.ApiInterface
+import com.example.task5_2.api.ApiInterface
 import com.fasterxml.jackson.databind.ObjectMapper
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory

@@ -102,5 +102,13 @@
         app:layout_constraintStart_toEndOf="@+id/itemInputAuthor"
         app:layout_constraintTop_toTopOf="@+id/itemInputAuthor" />
 
+    <TextView
+        android:id="@+id/textViewID1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="370dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

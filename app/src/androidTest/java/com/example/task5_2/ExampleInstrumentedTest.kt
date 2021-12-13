@@ -1,4 +1,4 @@
-package com.example.task4_4
+package com.example.task5_2
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
